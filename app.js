@@ -1,7 +1,7 @@
 let input = document.querySelector(".search_input");
 let loca = document.getElementById("location");
 let temp = document.getElementById("temperature");
-let cond = document.getElementById("condition");
+let wind = document.getElementById("wind")
 let cloud = document.getElementById("cloud");
 let image = document.getElementById("image")
 let forcast = document.querySelector(".forcast");
@@ -11,7 +11,7 @@ function moveCursorToMiddle(input) {
     input.setSelectionRange(length, length);
 };
 
-input.addEventListener("keyup", function (event) {
+input.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
     }
@@ -23,7 +23,8 @@ input.addEventListener("keyup", function (event) {
         .then((data) => {
             temp.innerText = `${data.main.temp} °c`;
             cloud.innerText = data.weather[0].main;
-            country.innerText = `${data.name}, ${data.sys.country}`
+            country.innerText = `${data.name}, ${data.sys.country}`;
+            wind.innerText = `${data.wind.speed} km/h`;
 
             // console.log(data.weather[0].main);
             console.log(data);
