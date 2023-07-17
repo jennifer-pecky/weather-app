@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(main.png);
+    background-size: 100%;
+    background-position: cover;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.trust p {
+    font-style: italic;
+    font-family: cursive;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+input {
+    width: 60vw;
+    height: 45px;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.search_input {
+    text-align: center;
+    color: #999;
+}
+
+.box {
+    width: 70vw;
+    height: 50vh;
+    border: 2px solid white;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.forcast {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.days {
+    display: flex;
+    /* gap: 30px; */
+    margin-top: 12rem;
+}
+
+.small-box {
+    margin: auto;
+    width: 5vw;
+    height: 15vh;
+    border: 2px solid whitesmoke;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.small-box h3 {
+    font-size: 15px;
+    font-family: cursive;
+    font-style: italic;
+}
+
+.small-box small {
+    font-size: 20px;
+    font-family: cursive;
+    font-style: italic;
+    padding: 10px;
+}
+
+/* media queries */
+
+
+@media only screen and (max-width: 1200px) {
+    /*Tablets [601px -> 1200px]*/
+}
+
+@media only screen and (max-width: 600px) {
+    /*Big smartphones [426px -> 600px]*/
+}
+
+@media only screen and (max-width: 425px) {
+    /*Small smartphones [325px -> 425px]*/
+
+    .box {
+        border: none;
+    }
+
+    .small-box {
+        margin: 10px 5px;
+        width: 20vw;
+        height: 15vh;
+        border: 2px solid whitesmoke;
+        color: white;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+}
